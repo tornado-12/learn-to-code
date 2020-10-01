@@ -1,8 +1,4 @@
-# learn-to-code
-contains code of data structures and algorithms in various languages.
-looking up to contributions from various users to improve.
-
-# The Folder C++ Contains The Important Questions for Interview Part
+# The Folder C++/Interview-Questions Contains The Important Questions for Interview Part
 
 ## These are the List Of Questions which have Solutions with The Respective Name Of the Problem
 
