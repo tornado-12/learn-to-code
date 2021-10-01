@@ -1,0 +1,32 @@
+function merge(left, right) {
+  const result = [];
+  let leftSub = left;
+  let rightSub = right;
+
+  while (leftSub.length > 0 && rightSub.length > 0) {
+    if (leftSub[0] < rightSub[0]) {
+      result.push(leftSub[0]);
+      leftSub = leftSub.slice(1);
+    } else {
+      result.push(rightSub[0]);
+      rightSub = rightSub.slice(1);
+    }
+  }
+  return result.concat(leftSub, rightSub);
+}
+
+function mergeSort(arr) {
+  if (arr.length === 1) {
+    return arr;
+  }
+
+  return merge(
+    mergeSort(arr.slice(0, arr.length / 2)),
+    mergeSort(arr.slice(arr.length / 2))
+  );
+}
+
+const array = [...Array(10)].map((e) => ~~(Math.random() * 100));
+
+console.log(array);
+console.log(mergeSort(array));
