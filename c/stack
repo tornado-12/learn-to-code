@@ -1,0 +1,84 @@
+#include<stdio.h>
+#define MAX 5
+int stack[MAX],top=-1;
+void push()
+{
+    int value;
+    if(top==MAX-1)
+    {
+        printf("\nstack is full\n");
+    }
+    else
+    {
+        printf("enter the value to push in the stack:");
+        scanf("%d",&value);
+        top++;
+        stack[top]=value;
+    }
+}
+void pop()
+{
+    if(top==-1)
+    {
+        printf("\nstack is empty\n");
+    }
+    else
+    {
+        printf("deleted element is %d",stack[top]);
+        top--;
+    }
+}
+void display()
+{
+    if(top>=0)
+    {
+        printf("stack elements:\n");
+        for(int i=top;i>=0;--i)
+        {
+            printf("%d\n",stack[i]);
+        }
+    }
+    else if(top==-1)
+    {
+        printf("\nstack is empty\n");
+    }
+}
+int main()
+{
+    int exit=0;
+    for(int x=0;x<=100;x++)
+    {
+        printf("\npress 1 to push the element in stack\n");
+        printf("press 2 to pop the element from stack\n");
+        printf("press 3 to display the elements\n");
+        printf("press 4 for exit\n");
+        printf("NOTE: max input 5\n");
+        int ch;
+        printf("enter your choice:");
+        scanf("%d",&ch);
+        switch (ch)
+        {
+            case 1:
+            push();
+            break;
+            case 2:
+            pop();
+            break;
+            case 3:
+            display();
+            break;
+            case 4:
+            printf("EXIT");
+            exit++;
+            break;
+            default:
+            printf("INVALID CHOICE");
+            break;
+        }
+        if(exit==1)
+        {
+            break;
+        }
+    }
+    return 0;
+}
