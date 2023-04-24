@@ -1,0 +1,11 @@
+total 9
+-rwxr-xr-x 1 Khagapati 197121 391 Oct  2 09:50 arithmatic.sh
+-rwxr-xr-x 1 Khagapati 197121 418 Oct  2 10:59 case.sh
+-rwxr-xr-x 1 Khagapati 197121 403 Oct  1 23:09 for_loop.sh
+-rwxr-xr-x 1 Khagapati 197121  33 Oct  1 22:58 hello_world.sh
+-rwxr-xr-x 1 Khagapati 197121  86 Oct  2 22:46 read_from_a_file.sh
+-rw-r--r-- 1 Khagapati 197121   0 Oct  2 22:46 text_file.txt
+-rwxr-xr-x 1 Khagapati 197121 138 Oct  1 22:58 use_echo.sh
+-rwxr-xr-x 1 Khagapati 197121  83 Oct  1 22:58 user_input.sh
+-rwxr-xr-x 1 Khagapati 197121 125 Oct  1 22:58 while_loop.sh
+-rwxr-xr-x 1 Khagapati 197121 130 Oct  2 22:45 write_to_a_file.sh
